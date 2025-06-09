@@ -102,7 +102,7 @@ overlayMaps["Status Keterjangkauan"] = Keterjangkauan;
 // LAYER: BATAS ADMINISTRASI
 // ============================
 const Batas_Admin = new L.LayerGroup();
-$.getJSON(".//Spasial/Batas_Admin.geojson")
+$.getJSON("./Asset/Spasial/Batas_Admin.geojson")
   .done(function (data) {
     L.geoJson(data, {
       pane: 'adminPane',
@@ -131,7 +131,7 @@ const olahragaIcon = L.icon({
 });
 
 const FasilitasOR = new L.LayerGroup();
-$.getJSON(".//Spasial/Fasilitas_OR.geojson")
+$.getJSON("./Asset/Spasial/Fasilitas_OR.geojson")
   .done(function (data) {
     L.geoJson(data, {
       pane: 'FasilitasORPane',
