@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo { 
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    }
+    .logo img {
+    width: 80px; /* Set the width of the logo */
+    margin-right: 10px; /* Add some space between the image and title */
+    }
+    .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    }
+    
+  body {
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background-image:
+    url('https://www.awid.org/sites/default/files/2022-09/gender-ideology.jpg'); /* Replace
+    'city-background.jpg' with your image */
+    background-color: #333;
+    color: white;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border:#9f7e59;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 150px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  
+    .nav-links a {
+      padding: 12px;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
+  /* Page content padding */
+  .content {
+    padding-top: 70px;
+    text-align: center;
+  }
+  
+ 
+/* Konten utama tidak tertutup header */
+#author {
+  margin-top: 150px;
+}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9f7e59;
+  }
+
+  header {
+    background-color: #a67c52;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    color: #9f7e59;
+  }
+
+  .section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #E8EBD2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .author-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #9f7e59;
+  }
+
+  .author-name {
+    color: #9f7e59;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .author-bio {
+    color: #9f7e59;
+    margin: 10px 0 20px;
+  }
+
+  .more-info {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+    background:  #9f7e59;
+    padding: 15px;
+    border-radius: 10px;
+    color:white;
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: #9f7e59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #9f7e59;
+  }
+
+  h2 {
+    color: #9f7e59;
+  }
+
+ 
+
+  /* footer */
+  main {
+    flex: 1;
+  }
+
+  footer {
+    background-color: #E8EBD2;
+    color: #9f7e59;
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #9f7e59;
+    padding-bottom: 5px;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-section ul li a {
+    color: #9f7e59;
+    text-decoration: none;
+  }
+
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-section {
+      text-align: center;
+    }
+  }
+  .footer-section ul li i {
+    margin-right: 8px;
+    color: #9f7e59;
+  }

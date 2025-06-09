@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Swiper CSS -->  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/data.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Penulis</title>
+
+</head>
+<script>
+  var swiper = new Swiper(".beritaSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    }
+  });
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<body>
+    <nav>
+        <div class="logo">
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+        <img src="asset/LogoBGD.png" alt="Logo" width="100">
+        <h1>Fasilitas Olahraga Kota Bandung </h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a>
+          <li><a href="WEBGIS.html">WebGIS</a>
+          <li><a href="data.html">Data/Informasi</a>
+          <li><a href="author.html">Profile</a>
+        </div>
+      </nav>
+
+  <!--Data Section--> 
+                
+                <div id="data-section"> 
+                    <h2>gallery fasilitas olahraga</h2> 
+                    
+<!--galeri-->
+ 
+                  
+                   <div class="gallery-container">
+    <!-- Kolom kiri: gambar -->
+    <div class="gallery-left">
+      <img id="mainImage" class="main-image" src="Asset/gasibu.jpg" alt="Galeri">
+      <div class="thumbnails">
+        <img src="Asset/tenis.jpg" class="thumbnail active-thumbnail" onclick="changeImage(this)">
+        <img src="Asset/oasis.png" class="thumbnail" onclick="changeImage(this)">
+        <img src="Asset/sportjabar.jpg" class="thumbnail" onclick="changeImage(this)">
+        <img src="Asset/basket.jpeg" class="thumbnail" onclick="changeImage(this)">
+        <img src="Asset/gbla.jpeg" class="thumbnail" onclick="changeImage(this)">
+        <img src="Asset/gorsaparua.jpeg" class="thumbnail" onclick="changeImage(this)">
+        <img src="Asset/Stadion upi.jpg" class="thumbnail" onclick="changeImage(this)">
+        <img src="Asset/kiaraartha.jpg" class="thumbnail" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <!-- Kolom kanan: teks -->
+    <div class="gallery-right">
+      <div class="description">
+        <h3>SEPUTAR FASILITAS OLAHRAGA KOTA BANDUNG</h3>
+        <p>
+          Kondisi fasilitas olahraga di Kota Bandung mengalami kemajuan yang cukup signifikan, namun masih menghadapi berbagai tantangan, khususnya dalam hal pemerataan dan kelengkapan di wilayah tertentu. Saat ini, terdapat sekitar 17 fasilitas olahraga yang dikelola oleh Dinas Pemuda dan Olahraga (Dispora), tersebar di delapan kecamatan, dengan Kecamatan Lengkong sebagai salah satu yang memiliki kelengkapan fasilitas terbaik. Namun, wilayah seperti Bandung Timur masih kekurangan fasilitas olahraga akibat keterbatasan lahan yang sudah banyak digunakan untuk permukiman. Ketimpangan ini juga tampak di lingkungan pendidikan, di mana fasilitas olahraga di tingkat Sekolah Dasar (SD) dan Sekolah Menengah Pertama (SMP) masih sangat minim, sehingga menyulitkan proses pembinaan atlet usia dini. Sementara itu, fasilitas di tingkat Sekolah Menengah Atas (SMA) sudah mulai menunjukkan kemajuan dengan keberadaan lapangan dan gedung olahraga yang mendukung kegiatan ekstrakurikuler.
+
+Pemerintah Kota Bandung terus melakukan berbagai upaya untuk memperbaiki kondisi ini, salah satunya melalui penerbitan regulasi turunan dari Peraturan Daerah tentang Penyelenggaraan Keolahragaan, guna mendukung pembangunan budaya olahraga yang lebih merata. Program-program seperti Festival Olahraga Kabupaten Bandung (FORKAB) juga dimanfaatkan untuk memasyarakatkan olahraga dan mencari bibit atlet potensial, sekaligus membangun ruang interaksi sosial yang positif. Di sisi lain, pembangunan sarana olahraga di wilayah sekitar seperti Kabupaten Bandung Barat masih terkendala anggaran, dengan beberapa proyek seperti Gedung Olahraga Pemuda yang belum terselesaikan. Pemerintah juga memperhatikan aspek kesehatan dengan menerapkan pengawasan ketat terhadap protokol kesehatan di fasilitas olahraga. Secara keseluruhan, meskipun Bandung memiliki potensi dan keragaman fasilitas olahraga, masih diperlukan peningkatan baik dari sisi kuantitas maupun kualitas, serta pemerataan agar seluruh masyarakat dapat menikmati manfaatnya secara adil dan berkelanjutan.
+        </p>
+      </div>
+    </div>
+  </div>
+
+              
+
+
+<!--berita-->
+<section id="berita-terkait" style="padding: 50px 0; background: #f4f4f4;">
+  <div class="container">
+    <h2 style="text-align:center; color:#9f7e59; margin-bottom: 30px;">BERITA TERKAIT</h2>
+    <p style="text-align:center; margin-bottom: 40px;">Section ini mengantarkan anda ke berita terkait masalah kesehatan dan fasilitas kesehatan</p>
+
+    <div class="swiper beritaSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="berita-card">
+            <iframe src="https://limawaktu.id/news/pemkot-bandung-akan-revitalisasi-fasilitas-olahraga" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="berita-card">
+            <iframe src="https://bandung.go.id/news/read/9438/kota-bandung-sukses-loloskan-atlet-terbanyak-ke-popda-jabar-2025" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Tambahkan slide berita lain di sini -->
+        <div class="swiper-slide">
+          <div class="berita-card">
+            <iframe src="https://www.ligaolahraga.com/bola/timnas-indonesia-u-17-awali-pemusatan-latihan-di-bandung" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Tambahkan slide berita lain di sini -->
+        <div class="swiper-slide">
+          <div class="berita-card">
+            <iframe src="https://terasbandung.com/2024/10/01/dispora-terus-jaga-kualitas-sarana-olahraga-di-kota-bandung-termasuk-stadion-persibsidolig" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Tambahkan slide berita lain di sini -->
+        <div class="swiper-slide">
+          <div class="berita-card">
+            <iframe src="https://rejabar.republika.co.id/berita/s9mfd8512/pansus-8-dprd-kota-bandung-lakukan-pembahasan-pentingnya-olahraga-di-dunia-pendidikan" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Tambahkan slide berita lain di sini -->
+        <div class="swiper-slide">
+          <div class="berita-card">
+            <iframe src="https://bandung.go.id/news/read/8036/kenalan-dengan-oza-peraih-dua-perak-sea-games-2023-dari-kota-bandung" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigasi -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+ <!--Footer-->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Sistem GIS Kota Bandung</h3>
+            <p>Platform pemetaan digital fasilitas umum dan olahraga di Kota Bandung.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Navigasi</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="WEBGIS.html">WebGIS</a></li>
+              <li><a href="data.html">Data/Informasi</a></li>
+              <li><a href="author.html">Profile</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <ul>
+              <li><i class="fas fa-envelope"></i> info@gisbandung.go.id</li>
+              <li><i class="fas fa-phone"></i> (022) 123-4567</li>
+              <li><i class="fas fa-map-marker-alt"></i> Jl. Asia Afrika No. 1, Bandung</li>
+              <li>
+                <a href="https://instagram.com/gisbandung" target="_blank">
+                  <i class="fab fa-instagram"></i> @gisbandung
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; <span id="year"></span> Dinas Komunikasi dan Informatika Kota Bandung. All rights reserved.
+        </div>
+        <div class="footer-section">
+      </footer>
+          <!-- ============================ -->
+<script src="js/index.js">
+</script>
+<script src="js/WEBGIS.js"></script>
+<script src="js/data.js"></script>
+<script src="js/author.js"></script>
+
+<script>
+  var swiper = new Swiper(".beritaSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    }
+  });
+</script>
+
+</body>
+</html>

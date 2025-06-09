@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/Index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Olahraga Kota Bandung</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+        <img src="asset/LogoBGD.png" alt="Logo" width="100">
+        <h1>Fasilitas Olahraga Kota Bandung </h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a>
+          <li><a href="WEBGIS.html">WebGIS</a>
+          <li><a href="data.html">Data/Informasi</a>
+          <li><a href="author.html">Profile</a>
+        </div>
+      </nav>
+    
+      hero sec 
+             <!--Hero Section-->
+             <div class="carousel-container">
+              <div class="carousel-slide" id="carouselSlide">
+                <div class="carousel-item" style="background-image: url('https://stadiumdb.com/pictures/stadiums/idn/stadion_patriot_candrabhaga/stadion_patriot_candrabhaga10.jpg');">
+                  <div class="carousel-text">
+                    <h2>Fasilitas Olahraga</h2>
+                    <p>Fasilitas olahraga merupakan infrastruktur penting yang terdiri dari sarana fisik (stadion, GOR, lapangan, kolam renang) dan nonfisik (klub, pelatih) untuk mendukung aktivitas olahraga baik untuk pendidikan, prestasi, maupun rekreasi. Ketersediaan fasilitas yang memadai dapat meningkatkan minat, partisipasi, dan prestasi masyarakat dalam bidang olahraga, serta mendorong pola hidup sehat dan aktif</p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://pix8.agoda.net/property/401119/0/672a34c107135a6f28bad5bb74961253.jpeg?ce=2&s=1024x');">
+                  <div class="carousel-text">
+                    <h2>Jenis Fasilitas Olahraga</h2>
+                    <p>Umumnya fasilitas olahraga yang tersedia memiliki dua jenis. Pertama, fasilitas olahraga berbayar adalah sarana atau prasarana olahraga yang penggunaannya memerlukan pembayaran, baik berupa sewa, tiket masuk, maupun biaya keanggotaan.Untuk fasilitas olahraga ini biasa dikenal dengan istilah fasilitas olahraga komersial. Adapun fasilitas olahraga umum yaitu sarana atau prasarana olahraga yang dapat digunakan masyarakat tanpa dipungut biaya, baik yang dikelola pemerintah maupun swasta. </p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://saraga-sabuga.itb.ac.id/wp-content/uploads/sites/409/2021/04/WhatsApp-Image-2020-12-28-at-15.58.12-1.jpeg');">
+                  <div class="carousel-text">
+                    <h2>Masyarakat Hidup Sehat</h2>
+                    <p>Akses yang mudah terhadap sarana olahraga memungkinkan masyarakat melakukan aktivitas fisik secara rutin. Olahraga teratur terbukti dapat menurunkan risiko berbagai penyakit tidak menular seperti jantung, diabetes, obesitas, hipertensi, dan osteoporosis.Selain itu, aktivitas fisik juga membantu meningkatkan imunitas tubuh, sehingga masyarakat tidak mudah terserang penyakit.Fasilitas olahraga yang memadai juga berkontribusi pada kesehatan mental, seperti mengurangi stres, kecemasan, dan depresi. Olahraga dapat meningkatkan suasana hati, rasa percaya diri, serta kualitas tidur.Dengan demikian, kualitas hidup masyarakat secara keseluruhan juga meningkat. </p>
+                  </div>
+                </div>
+              </div>
+            
+              <button class="nav-button left" onclick="moveSlide(-1)">❮</button>
+              <button class="nav-button right" onclick="moveSlide(1)">❯</button>
+            </div>
+     
+            <!--Footer-->
+            <footer>
+              <div class="footer-container">
+                <div class="footer-section">
+                  <h3>Sistem GIS Kota Bandung</h3>
+                  <p>Platform pemetaan digital fasilitas umum dan olahraga di Kota Bandung.</p>
+                </div>
+                <div class="footer-section">
+                  <h3>Navigasi</h3>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="WEBGIS.html">WebGIS</a></li>
+                    <li><a href="data.html">Data/Informasi</a></li>
+                    <li><a href="author.html">Profile</a></li>
+                  </ul>
+                </div>
+                <div class="footer-section">
+                  <h3>Kontak</h3>
+                  <ul>
+                    <li><i class="fas fa-envelope"></i> info@gisbandung.go.id</li>
+                    <li><i class="fas fa-phone"></i> (022) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Asia Afrika No. 1, Bandung</li>
+                    <li>
+                      <a href="https://instagram.com/gisbandung" target="_blank">
+                        <i class="fab fa-instagram"></i> @gisbandung
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                &copy; <span id="year"></span> Dinas Komunikasi dan Informatika Kota Bandung. All rights reserved.
+              </div>
+              <div class="footer-section">
+            </footer>
+
+    <!-- ============================ -->
+<script src="js/index.js">
+</script>
+<script src="js/WEBGIS.js"></script>
+<script src="js/data.js"></script>
+<script src="js/author.js"></script>
+
+</body>
+</html>

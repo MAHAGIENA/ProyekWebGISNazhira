@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/author.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Penulis</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <div class="menu-toggle" onclick="toggleMenu()"></div>
+        <img src="asset/LogoBGD.png" alt="Logo" width="100">
+        <h1>Fasilitas Olahraga Kota Bandung </h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a>
+          <li><a href="WEBGIS.html">WebGIS</a>
+          <li><a href="data.html">Data/Informasi</a>
+          <li><a href="author.html">Profile</a>
+        </div>
+      </nav>
+
+            <!-- Section author -->
+
+      <section id="author">
+        <section class="section">
+        <div style="text-align: center;">
+          <img src="Asset/Nazhira.jpg" alt="Foto Penulis" class="author-photo">
+          <div class="author-name">Nazhira Mahagiena Senjaya</div>
+          <div class="author-bio">Nazhira Mahagiena Senjaya merupakan seorang mahasiswa aktif dari program studi Sains Informasi Geografi. Sedang menempuh pendidikan S1 yang nantinya ketika lulus akan menjadi seorang analis Sistem Informasi Geografis (SIG)
+            dan memiliki keahlian pada penginderaan jauh, 
+            WebGIS, dan SIG untuk mitigasi bencana dan termotivasi untuk terus belajar dan berkembang sebagai 
+            analis SIG.</div>
+          <button onclick="toggleMoreInfo()">Tampilkan Biodata Lengkap</button>
+          <div class="more-info" id="moreInfo">
+            <p><strong>Nama Lengkap:</strong> Nazhira Mahagiena Senjaya</p>
+            <p><strong>Tanggal Lahir:</strong> 24 Maret 2005</p>
+            <p><strong>Email:</strong> nazhiramahagiena@upi.edu</p>
+            <p><strong>Website:</strong> <a href="https://Mahagiena.dev" target="_blank">Mahagiena.dev</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/NazhiraMahagiena" target="_blank">linkedin.com/in/NazhiraMahagiena</a></p>
+            <p><strong>Keahlian:</strong> Survei Pemetaan, Penginderaan Jauh, Sistem Informasi Geografis</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Section Komentar -->
+      <section id="komentar">
+      <section class="section">
+        <h2>Komentar</h2>
+        <form id="commentForm">
+          <input type="text" id="username" placeholder="Nama Anda" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+          <textarea id="comment" placeholder="Tulis komentar..." required style="width: 100%; padding: 10px; height: 100px;"></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+        <div id="commentsList" style="margin-top: 20px;"></div>
+      </section>
+
+ <!--Footer-->
+ <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sistem GIS Kota Bandung</h3>
+        <p>Platform pemetaan digital fasilitas umum dan olahraga di Kota Bandung.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigasi</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="WEBGIS.html">WebGIS</a></li>
+          <li><a href="data.html">Data/Informasi</a></li>
+          <li><a href="author.html">Profile</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Kontak</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> info@gisbandung.go.id</li>
+          <li><i class="fas fa-phone"></i> (022) 123-4567</li>
+          <li><i class="fas fa-map-marker-alt"></i> Jl. Asia Afrika No. 1, Bandung</li>
+          <li>
+            <a href="https://instagram.com/gisbandung" target="_blank">
+              <i class="fab fa-instagram"></i> @gisbandung
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Dinas Komunikasi dan Informatika Kota Bandung. All rights reserved.
+    </div>
+    <div class="footer-section">
+  </footer>
+    <!-- ============================ -->
+    <script src="js/index.js">
+    </script>
+    <script src="js/WEBGIS.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/author.js"></script>
+</body>
+</html>
