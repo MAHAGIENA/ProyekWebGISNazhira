@@ -124,7 +124,7 @@ overlayMaps["Batas Administrasi"] = Batas_Admin;
 // LAYER: Fasilitas OR
 // ============================
 const olahragaIcon = L.icon({
-  iconUrl: './/icon4.png',
+  iconUrl: './Asset/icon4.png',
   iconSize: [20, 20],
   iconAnchor: [15, 30],
   popupAnchor: [0, -30]
@@ -159,7 +159,7 @@ legend.onAdd = function () {
     '<p style="font-size: 18px; font-weight: bold; margin: 10px 0 5px;">Legenda</p>' +
 
     '<p style="font-size: 12px; font-weight: bold; margin: 10px 0 5px;">Fasilitas Olahraga</p>' +
-    '<img src=".//icon4.png" width="24" height="24" style="display:inline-block; margin-right:6px;"> Fasilitas Olahraga<br>' +
+    '<img src="./Asset/icon4.png" width="24" height="24" style="display:inline-block; margin-right:6px;"> Fasilitas Olahraga<br>' +
 
     '<p style="font-size: 12px; font-weight: bold; margin: 10px 0 5px;">Batas Administrasi</p>' +
     '<div><svg width="24" height="12"><line x1="0" y1="6" x2="24" y2="6" style="stroke:red;stroke-width:2;stroke-dasharray:10 1 1 1 1 1 1 1 1 1" /></svg> Batas Administrasi</div><br>' +
